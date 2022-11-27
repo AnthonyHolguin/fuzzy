@@ -392,4 +392,4 @@ class FuzzyData(Resource):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='$PORT'}, debug=True)
+    app.run(host='https://fuzzy-production.up.railway.app/', port='$PORT'}, debug=True)
