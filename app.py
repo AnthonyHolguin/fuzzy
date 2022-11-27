@@ -11,6 +11,7 @@ from sqlalchemy.sql import and_
 
 from fuzzy import fuzzy_confianza, fuzzy_evaluacion
 import pandas as pd
+import os
 
 
 # flask instance
@@ -392,4 +393,4 @@ class FuzzyData(Resource):
 
 
 if __name__ == '__main__':
-    app.run(host='https://fuzzy-production.up.railway.app/', port=5000, debug=False)
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
