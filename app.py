@@ -15,8 +15,6 @@ import pandas as pd
 
 # flask instance
 app: Flask = Flask(__name__)
-PORT=5000
-DEBUG=False
 
 # flask config
 app.config['PROPAGATE_EXCEPTIONS'] = True
@@ -394,4 +392,4 @@ class FuzzyData(Resource):
 
 
 if __name__ == '__main__':
-    app.run(port = PORT, debug = DEBUG)
+    app.run(host='0.0.0.0', port='$PORT'}, debug=True)
