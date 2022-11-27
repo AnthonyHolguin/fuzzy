@@ -15,6 +15,7 @@ import pandas as pd
 
 # flask instance
 app: Flask = Flask(__name__)
+PORT=5000
 DEBUG=False
 
 # flask config
@@ -393,4 +394,4 @@ class FuzzyData(Resource):
 
 
 if __name__ == '__main__':
-    app.run(port = $PORT, debug = DEBUG)
+    app.run(port = PORT, debug = DEBUG)
